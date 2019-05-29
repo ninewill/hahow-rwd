@@ -8,10 +8,12 @@
     <meta property="og:title" content="Hahow 好學校"> <!-- 分享的標題  -->
     <meta property="og:description" content="Hahow 好學校課程幕資中，RWD課程熱烈招生中"> <!-- 分享的內容敘述 -->
     <meta property="og:url" content="https://ninewill.github.io/hahow-rwd/"> <!-- 分享的網頁連結 -->
-    <meta property="og:image:width og:image:height" content="http://www.joostrap.com/images/homepage_multiple_devices.jpg">
+    <meta property="og:image:width og:image:height" content="https://cdn-images-1.medium.com/max/2600/1*tgI-eaAP7b3FqwV3vyyG4w.png">
     <!--分享在FB的縮圖 -->
     <title>RWD實戰</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
 </head>
@@ -28,6 +30,9 @@
                 <a href="javascript:;">css3</a>
                 <a href="javascript:;">html5</a>
             </div>
+            <a id="FB" href="javascript:;">
+                <i class="fab fa-facebook-square" aria-hidden="true"></i>
+            </a>
         </nav>
     </header>
 
@@ -68,7 +73,11 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        $("#FB").on("click", function () {
+            window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)), "_blank", "toolbar=yes,location=yes,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=no,copyhistory=yes,width=600,height=400")
+        })
+    </script>
 </body>
 
 </html>
